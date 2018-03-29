@@ -77,6 +77,34 @@ Debian & Ubuntu
 
         # cd ..
         # sudo dpkg -i *.deb
+	
+Centos / RHEL
+-------------
+
+
+* Install essentials and required xmlrpc-c library:
+
+        # sudo yum install libcurl-devel xmlrpc-c-devel
+        # sudo yum install xmlrpc-c-devel libuuid xmlrpc-c-client++ xmlrpc-c xmlrpc-c-client libuuid-devel
+
+* Install optional libGSL and libpcap library if you want to use all flowgrind features:
+
+        # sudo yum install libpcap-devel
+        # sudo yum install gsl-devel
+
+* Download and extract archive:
+
+        # tar xjvf flowgrind-*.tar.bz2
+        # cd flowgrind-*
+
+  OR checkout flowgrind from the git repository:
+
+        # git clone git://github.com/flowgrind/flowgrind.git
+        # cd flowgrind
+        # autoreconf -i
+	
+* Packaging: There is currently no package 
+
 
 Gentoo
 ------
